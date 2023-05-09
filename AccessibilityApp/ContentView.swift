@@ -9,8 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Image(decorative: "galina-n-189483")
-            .accessibilityHidden(true)
+        VStack {
+            Text("Your score is")
+            Text("1000")
+                .font(.title)
+        }
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("Your score is 1000")
     }
 }
 
